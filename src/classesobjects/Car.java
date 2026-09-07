@@ -1,12 +1,24 @@
 package classesobjects;
 
 public class Car {
-    String maker;
-    String model;
-    short year;
-    short speed;
-    boolean isAutomatic;
+    private String maker;
+    private String model;
+    private short year;
+    private short speed;
+    private boolean isAutomatic;
     static int count = 0;
+
+    public void setSpeed(short speed){
+        if(speed < 0){
+            System.out.println("Invalid speed");
+            return;
+        }
+        this.speed = speed;
+    }
+
+    public short getSpeed(){
+        return this.speed;
+    }
 
     //default
     Car(){
@@ -30,8 +42,8 @@ public class Car {
     }
 
     void displayInfo(){
-        System.out.println(maker );
-        System.out.println(speed);
+        System.out.println(model );
+//        System.out.println(speed);
     }
 
     static void displayCount(){
@@ -43,9 +55,11 @@ class CarDemo{
     static void main() {
         Car car1 = new Car("toyota", "vios");
         Car car2 = new Car();
-        car1.model = "vios";
-        car2.model = "civic";
-        Car.displayCount();
+        car1.setSpeed((short)100);
+        car2.setSpeed((short)-50);
+        System.out.println(car1.getSpeed());
+        car1.displayInfo();
+        car2.displayInfo();
 
     }
 }
