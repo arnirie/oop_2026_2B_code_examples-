@@ -6,10 +6,17 @@
 
 void main() {
     Scanner sc = new Scanner(System.in);
-    short numCyl = sc.nextShort();
-    double amount = numCyl * 13.45;
-    if(amount > 200) amount += amount * 0.06;
-    numCyl += numCyl / 4;
-    System.out.println(amount);
-    System.out.println(numCyl);
+    short start, end, change;
+    start = sc.nextShort();
+    end = sc.nextShort();
+    change = sc.nextShort();
+    if(start < end) {
+        for (short c = (short) (start + change); c < end; c += change) {
+            System.out.print(c + " ");
+        }
+    }else {
+        for (short c = (short) (start - change); c > end; c -= change) {
+            System.out.print(c + " ");
+        }
+    }
 }
