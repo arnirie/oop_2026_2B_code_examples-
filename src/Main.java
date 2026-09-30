@@ -4,19 +4,11 @@
 // Purpose:
 
 
+import advanced.Teacher;
+//import advanced.MathTeacher;
+
 void main() {
-    Scanner sc = new Scanner(System.in);
-    short start, end, change;
-    start = sc.nextShort();
-    end = sc.nextShort();
-    change = sc.nextShort();
-    if(start < end) {
-        for (short c = (short) (start + change); c < end; c += change) {
-            System.out.print(c + " ");
-        }
-    }else {
-        for (short c = (short) (start - change); c > end; c -= change) {
-            System.out.print(c + " ");
-        }
-    }
+//    Teacher t = new Teacher();
+//    MathTeacher mt = new MathTeacher();
+
 }
