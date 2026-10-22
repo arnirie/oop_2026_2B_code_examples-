@@ -1,6 +1,6 @@
 package inheritance;
 
-public final class Teacher {
+public class Teacher {
     private String name;
     String department;
 
@@ -17,7 +17,7 @@ public final class Teacher {
         this.name = name;
     }
 
-    protected final void display(){
+    protected void display(){
         System.out.println(name);
         System.out.println(department);
     }
