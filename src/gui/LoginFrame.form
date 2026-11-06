@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.LoginFrame">
+  <grid id="27dc6" binding="main" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="389" height="228"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="67b53" binding="header" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="75651" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <font name="Century Gothic" size="22" style="1"/>
+              <text value="Student Information System"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="792d7" binding="footer" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4c2d6" class="javax.swing.JButton" binding="btnLogin">
+            <constraints/>
+            <properties>
+              <text value="Login"/>
+            </properties>
+          </component>
+          <component id="d5e77" class="javax.swing.JButton" binding="btnReset">
+            <constraints/>
+            <properties>
+              <text value="Reset"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c09c4" binding="form" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a9ca2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="User Name"/>
+            </properties>
+          </component>
+          <component id="e7747" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="7d274" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="53520" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6ebc8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="26292" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ID Number:"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
