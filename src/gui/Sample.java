@@ -7,8 +7,8 @@ import javax.swing.*;
 
 public class Sample {
     static void main() {
-        ComponentFrame cf = new ComponentFrame();
-        cf.setVisible(true);
+        JFrame frame = new AnotherComponents();
+        frame.setVisible(true);
 //        LoginFrame loginFrame = new LoginFrame();
 //        loginFrame.setVisible(true);
 //        JFrame frame = new JFrame("My First Frame");
