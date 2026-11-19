@@ -7,7 +7,7 @@ import javax.swing.*;
 
 public class Sample {
     static void main() {
-        JFrame frame = new AnotherComponents();
+        JFrame frame = new LabActivity();
         frame.setVisible(true);
 //        LoginFrame loginFrame = new LoginFrame();
 //        loginFrame.setVisible(true);
